@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+html {
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+  font-size: 62.5%;
+}
+
+#city-selector {
+  /* width: 10rem; */
+  font-size: 2rem;
+  padding: 0.6rem 1.4rem;
+  margin-top: 20px;
+  border-radius: 4px;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+#prayers {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* justify-content: space-around; */
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+#prayer-card {
+  width: 20rem;
+  background-color: white;
+  color: black;
+  border-radius: 9px;
+}
+
+#prayer-card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+#prayer-card .content {
+  padding: 1.8rem 1rem;
+  font-size: 20px;
+}
+
+.content h3 {
+  font-weight: 500;
+  font-size: 3.4rem;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.554);
+}
+
+.content h2 {
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.divider {
+  height: 1px;
+
+  background-color: rgba(255, 255, 255, 0.423);
+}
+
+.footer {
+  text-align: center;
+  /* margin-top: 4rem; */
+  padding: 2rem 3rem 0 3rem;
+  color: #ffffff91;
+}
+
+.footer a,
+span {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+/* ============================================ */
+/* ============to make it responsive================ */
+/* ============================================ */
+
+/* ************************* */
+/* 1200px landscape tablets  */
+/* ************************* */
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+}
+
+/* ************************* */
+/* 950px  tablets  */
+/* ************************* */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/* ************************* */
+/* 705px  smaller tablets  */
+/* ************************* */
+@media (max-width: 44em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  #prayer-card {
+    /* width: 13rem; */
+    width: 100%;
+  }
+}
+
+/* ************************* */
+/* 544px   phones  */
+/* ************************* */
+@media (max-width: 34em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #prayers {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.7rem;
+  }
+
+  #root {
+    width: 70%;
+  }
+
+  #prayer-card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+
+  #prayer-card .content {
+    padding: 0.6rem 0.5rem;
+    font-size: 20px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+}
