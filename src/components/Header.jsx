@@ -18,8 +18,8 @@ export default function Header({ city, timings }) {
     seconds: "00",
   });
 
-  console.log("header is re-rendered");
-  console.log(nextPrayerIndex);
+  // console.log("header is re-rendered");
+  // console.log(nextPrayerIndex);
 
   useEffect(() => {
     function setupCountdownTimer() {
@@ -87,7 +87,7 @@ export default function Header({ city, timings }) {
     }
 
     let interval = setInterval(() => {
-      console.log("calling timer");
+      // console.log("calling timer");
 
       setupCountdownTimer();
     }, 1000);

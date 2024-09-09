@@ -7,7 +7,11 @@ export default function PrayerItem({ name, time, image }) {
 
   return (
     <div id="prayer-card">
-      <img src={image} />
+      <img
+        src={image}
+        loading="lazy"
+        alt="Accurate Prayer Times for Your Location"
+      />
       <div className="content">
         <h2>{name}</h2>
         <h3>{`${wholeTime[0]}:${wholeTime[1]}`}</h3>
