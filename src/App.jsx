@@ -1,4 +1,4 @@
-import Prayers from "./components/prayers";
+import Prayers from "./components/Prayers";
 import "./App.css";
 import Divider from "./components/Divider";
 import Header from "./components/Header";
